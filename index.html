@@ -18,24 +18,35 @@
             flex-direction: column;
             align-items: center;
         }
+        /* Avatar with glow */
         .avatar {
-            width: 120px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             margin-bottom: 15px;
-            flex-shrink: 0;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            border: 3px solid #fff;
+            object-fit: cover;
+        }
+        /* Window (card) styling */
+        .card {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+            padding: 15px;
+            max-width: 420px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
         }
         h1 {
-            font-size: 22px;
+            font-size: 24px;
             margin-bottom: 10px;
         }
         p {
             font-size: 16px;
-            margin-bottom: 25px;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-bottom: 15px;
             line-height: 1.4;
         }
+        /* Glowing buttons */
         .button {
             display: block;
             background-color: #1b75d0;
@@ -47,53 +58,46 @@
             width: 90%;
             max-width: 320px;
             font-size: 16px;
-            transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
-            cursor: pointer;
-            border: 2px solid white;
-            box-shadow: 0 4px 8px rgba(27, 117, 208, 0.4);
             font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+            box-shadow: 0 0 15px rgba(27, 117, 208, 0.8), 0 0 30px rgba(27, 117, 208, 0.5);
         }
         .button:hover, .button:focus {
             background-color: #145a99;
-            box-shadow: 0 6px 14px rgba(20, 90, 153, 0.7);
             transform: translateY(-2px);
-            outline: none;
+            box-shadow: 0 0 25px rgba(27, 117, 208, 1), 0 0 50px rgba(27, 117, 208, 0.8);
         }
         .muted-text {
             color: #aaaaaa;
             font-size: 14px;
-            max-width: 320px;
-            margin: 0 auto;
             line-height: 1.3;
         }
         @media (max-width: 480px) {
-            h1 {
-                font-size: 20px;
-            }
-            p {
-                font-size: 14px;
-                max-width: 90%;
-            }
-            .button {
-                font-size: 15px;
-                padding: 12px 18px;
-                max-width: 280px;
-                border-radius: 10px;
-            }
-            .muted-text {
-                font-size: 12px;
-                max-width: 280px;
-            }
+            h1 { font-size: 20px; }
+            p { font-size: 14px; }
+            .button { font-size: 15px; padding: 12px 18px; }
+            .muted-text { font-size: 12px; }
         }
     </style>
 </head>
 <body>
-    <img src="avatar.jpg" alt="Logo of the Spin Money channel" class="avatar" />
-    <h1>Spin Money🔥</h1>
-    <p>Topics you don't discuss at lunch🧠 <br>No risk – no reward🥵 gaazzz🔥</p>
-    <p><strong>Promo code for +500%</strong> <br>TWISTED500</p>
+    <img src="avatar.jpg" alt="Logo" class="avatar" />
+    
+    <div class="card">
+        <h1>Spin Money🔥</h1>
+        <p>Topics you don't discuss at lunch🧠<br>No risk – no reward🥵 gaazzz🔥</p>
+    </div>
+
+    <div class="card">
+        <p><strong>Promo code for +500%</strong><br>TWISTED500</p>
+    </div>
+
     <a href="https://lkpf.pro/37f4" class="button">🎯 Watch the slot games here⚡️</a>
     <a href="https://t.me/mines_mk_bot" class="button">📢 Telegram: Channel with <b>MINES</b> bot🔥</a>
-    <p class="muted-text">*If the link doesn't work, <br>open it in an external browser</p>
+
+    <div class="card muted-text">
+        *If the link doesn't work,<br>open it in an external browser
+    </div>
 </body>
 </html>
